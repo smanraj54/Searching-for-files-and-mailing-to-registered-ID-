@@ -32,6 +32,7 @@ public class Mail_sending {
         	Session session = Session.getInstance(props,
 		  new javax.mail.Authenticator() {
 			protected PasswordAuthentication getPasswordAuthentication() {
+				// Sending mail should not have double security check ON......
 				return new PasswordAuthentication("SENDING MAIL@gmail.com", "PASSWORD");
 			}
                         });//JOptionPane.showMessageDialog(null,"authenticated");
